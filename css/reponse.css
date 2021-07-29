@@ -100,24 +100,9 @@
   }
 
   /*contact*/
-  .contact-content {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
+
   .contact-info {
     margin-top: 5%;
-  }
-  .right-content {
-    display: block;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .right-content input {
-    margin: 0 auto 20px auto;
-  }
-  .right-content textarea {
-    margin: 0 auto 50px;
   }
 }
 
@@ -139,14 +124,6 @@
   }
 }
 
-@media all and (max-width: 650px) {
-  .right-content input {
-    width: 100%;
-  }
-  .right-content textarea {
-    width: 100%;
-  }
-}
 @media all and (max-width: 570px) {
   /*intro*/
   .intro-title h3 {
