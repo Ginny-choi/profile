@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +34,7 @@
                 </a>
             </div>
         </header>
-        <div class="mobile-menu">
+        <div class="mobile-menu mobile-menu-hide">
             <nav id="mobile-nav">
                 <ul>
                     <li><a href="#about" class="goBtn main-btn">About me</a></li>
@@ -58,10 +58,10 @@
                 <div class="content">
                     <div class="intro-title">
                         <h3>WEBPUBLISHER_</h3>
-                        <h2>PORTFOLIO</h2>
+                        <h2 class="move-font">PORTFOLIO</h2>
                     </div>
                     <div class="photo">
-                        <img src="./img/img1.JPG" alt="profile-photo">
+                        <img src="./img/img1.jpg" alt="profile-photo">
                     </div>
                 </div>
                                
@@ -78,8 +78,7 @@
                  </div>                 
                 <div class="my-text">
                      <p>
-                        안녕하세요. 신입 웹퍼블리셔를 꿈꾸는 최은정입니다. 저는 탐험의 가치를 중요시하는 사람입니다. 그래서 해외 생활과 여행 등 새로운 도전은 마다하지 않고 해왔습니다. 이 시대의 우리는 기계를 통해서 현 세계가 아닌 다른 세상을 들여다보며 그곳에서 많은 시간을 보냅니다. 
-                        코딩을 통해 다른 세상을 연결하며 또한 만들어는 것이 탐험과 같다는 매력에 빠져 공부를 시작하게 되었습니다. 공부를 시작한 후부터 지금까지 즐겁고 설레는 마음으로 기초를 다지며 새로운 기술들을 배워 나가고 있습니다 시작은 웹퍼블리셔로 시작하지만 더욱더 많은 언어와 기술들을 배워서 프론트엔드 개발자가 되는 것이 미래의 목표입니다.
+                        안녕하세요. 신입 웹퍼블리셔를 꿈꾸는 최은정입니다. 저는 탐험의 가치를 중요시하는 사람입니다. 그래서 해외 생활과 여행 등 새로운 도전은 마다하지 않고 해왔습니다. 이 시대의 우리는 기계를 통해서 현 세계가 아닌 다른 세상을 들여다보며 그곳에서 많은 시간을 보냅니다. 코딩을 통해 다른 세상을 연결하며 또한 만드는 것이 탐험과 같다는 매력에 빠져 공부를 시작하게 되었습니다. 공부를 시작한 후부터 지금까지 즐겁고 설레는 마음으로 기초를 다지며 새로운 기술들을 배워 나가고 있습니다. 시작은 웹 퍼블리셔로 시작하지만, 더욱더 많은 언어와 기술들을 배워서 프론트엔드 개발자가 되는 것이 미래의 목표입니다.
                      </p>
                 </div>
                 <div class="icon-box">
@@ -111,9 +110,9 @@
                                 <span>22 December 1992</span>                                
                             </li>   
                             <li class="info"> 
-                                <span>EDUCATION</span>
-                                <span>더조은 아카데미 웹퍼블리셔<br>
-                                     과정 수료</span>                                
+                                <span>EDUCATION</span>                               
+                                <span>더조은 아카데미 웹퍼블리셔(UI/UX)<br>
+                                    실무자 양성과정 수료</span>                                
                             </li>   
                             <li class="info">
                                 <span>LICENSE</span>
@@ -131,13 +130,13 @@
                 </div>                 
                <div class="my-text">
                     <p>                       
-                        제가 사용하거나 배워나가고 있는 스킬들입니다. 수치화 기준은 주관적 숙련도 및 적응 입니다. 웹퍼블리셔가 되기 위해 html,css, jQuery 위주로 학원에서 배웠으나 향후 개발자가 되기 위하여 JavaScript, Vue.js도 배우기 위해 노력하고 있습니다. 추후에는 수치화 높은 Js,Vue 그리고 리액트도 저의 스킬셋을 업데이트 하겠습니다.
+                        제가 사용하거나 배워나가고 있는 스킬들입니다. 수치화 기준은 주관적 숙련도 및 적응입니다. 웹퍼블리셔가 되기 위해 html, css, jQuery 위주로 학원에서 배운 후, 개발자가 되기 위하여 JavaScript, Vue.js도 배우기 위해 노력하고 있습니다. 추후에는 수치화 높은 JavaScript, Vue.js 그리고 React를 저의 기술 목록에 업데이트하겠습니다.
                     </p>
                </div>
                <div class="skils-list">
                     <div class="list-wrap">
                         <div class="svgWrap">
-                            <svg id="svg" viewBox="0 0 500 500" >
+                            <svg class="svg" viewBox="0 0 500 500" >
                                 <circle class="circle circle1" cx="250" cy="250" r="200"/>
                             </svg>
                             <span class="number">90%</span>
@@ -146,7 +145,7 @@
                     </div>
                     <div class="list-wrap">
                         <div class="svgWrap">
-                            <svg id="svg" viewBox="0 0 500 500" >
+                            <svg class="svg" viewBox="0 0 500 500" >
                                 <circle class="circle circle2" cx="250" cy="250" r="200"/>
                             </svg>
                             <span class="number">80%</span>
@@ -155,7 +154,7 @@
                     </div>
                         <div class="list-wrap">
                         <div class="svgWrap">
-                            <svg id="svg" viewBox="0 0 500 500" >
+                            <svg class="svg" viewBox="0 0 500 500" >
                                 <circle class="circle circle3" cx="250" cy="250" r="200"/>
                             </svg>
                             <span class="number">80%</span>
@@ -164,7 +163,7 @@
                     </div>
                     <div class="list-wrap">
                 <div class="svgWrap">
-                    <svg id="svg" viewBox="0 0 500 500" >
+                    <svg class="svg" viewBox="0 0 500 500" >
                         <circle class="circle circle4" cx="250" cy="250" r="200"/>
                     </svg>
                     <span class="number">55%</span>
@@ -173,7 +172,7 @@
             </div>
             <div class="list-wrap">
                 <div class="svgWrap">
-                    <svg id="svg" viewBox="0 0 500 500" >
+                    <svg class="svg" viewBox="0 0 500 500" >
                         <circle class="circle circle5" cx="250" cy="250" r="200"/>
                     </svg>
                     <span class="number">45%</span>
@@ -201,7 +200,7 @@
                         <h4>Project 01</h4>
                         <h3>Interior Design Site</h3>
                         <p>
-                            해외 웹에이전시 홈페이지입니다.  네비게이션 메뉴의 서브 메뉴가 많은 것이 특징입니다. 메인페이지의 첫 섹션은 버튼, 자동 그리고 터치 슬라이드로 구성 되어있습니다. 동영상 모달창, 마우스 오버, 카운트 함수 등의 효과로 동적인 효과를 주었습니다.
+                            해외 웹에이전시 홈페이지입니다.  네비게이션 메뉴의 서브 메뉴가 많은 것이 특징입니다. 메인 페이지의 첫 섹션은 버튼, 자동 그리고 터치 슬라이드로 구성되어 있습니다. 동영상 모달창, 마우스 오버, 카운트 함수 등의 효과로 동적인 효과를 주었습니다.
                         </p>
                         <div class="button-box">
                             <div class="btn-wrap">
@@ -221,7 +220,7 @@
                         <h4>Project 02</h4>
                         <h3>Travel site</h3>
                         <p>
-                            해외 웹에이전시 여행 사이트입니다. 버튼 주제에 따라서 콘텐츠가 변하는 갤러리 액티비티가 특징입니다. 슬라이드는 버튼과 터치로 이루어져있습니다. 주제에 따라서 내용이 변하는 아코디언 메뉴들이 있으며 그외 마우스 이벤트로 동적인 효과를 주었습니다. 
+                            해외 웹에이전시 여행 사이트입니다. 버튼 주제에 따라서 콘텐츠가 변하는 갤러리 액티비티가 특징입니다. 슬라이드는 버튼과 터치로 이루어져 있습니다. 주제에 따라서 내용이 변하는 아코디언 메뉴들이 있으며 그 외 마우스 이벤트로 동적인 효과를 주었습니다. 
                         </p>
                         <div class="button-box">
                             <div class="btn-wrap">
@@ -267,7 +266,7 @@
                         <h4>Project 04</h4>
                         <h3>Seoul Art Market</h3>
                         <p>
-                            서울 아트마켓 사이트입니다. php로 서브 페이지들을 연결하여 메인 메뉴의 각 서브 페이지로 이동이 가능합니다. 게시판은 ajax와 그누보드로 표현했습니다.  또한 로딩시 팝업창이 열리며 체크 박스 선택 후 종료를 누르면 쿠키가 설정됩니다.
+                            서울 아트마켓 사이트입니다. php로 서브 페이지들을 연결하여 메인 메뉴의 각 서브 페이지로 이동이 가능합니다. 게시판은 ajax와 그누보드로 표현했습니다.  또한 로딩 시 팝업창이 열리며 체크 박스 선택 후 종료를 누르면 쿠키가 설정됩니다.
                         </p>
                         <div class="button-box">
                             <div class="btn-wrap">
@@ -299,35 +298,35 @@
                             <article>
                                 <h2>Play Video</h2>
                                 <p>
-                                   반응형으로 제작된 동영상 재생 사이트입니다. 재생/정지/볼륨/음소거/배속/리플레이 기능을 구현 했습니다.
+                                  동영상 재생 사이트입니다. 재생/정지/볼륨/음소거/배속/리플레이 기능을 구현 했습니다.
                                 </p>
-                                <button>view more</button>
+                                <a class="moreBtn" href="http://oiokoo.dothome.co.kr/video/" target="_blank">view more</a>
                             </article>
                         </div>
                     </div>
                     <div class="item">                        
-                        <didiv class="card">
+                        <div class="card">
                             <div class="thumb thumb2"></div>
                             <article>
                                 <h2>To do list</h2>
                                 <p>
                                     JavaScript로 제작한 to do list입니다. 목록 추가와 개별 삭제, 전체 삭제가 가능합니다.                                   
                                 </p>
-                                <button>view more</button>
+                                <a class="moreBtn" href="http://oiokoo.dothome.co.kr/todolist/" target="_blank">view more</a>
                             </article>
-                        </didiv>
+                        </div>
                     </div>                    
                          <div class="item">
                         <div class="card">
                             <div class="thumb thumb3">
-                                <a class="naver" href="http://oiokoo.dothome.co.kr/member/input_member.html" target="_blank"></a>
+                                <!-- <a class="naver" href="http://oiokoo.dothome.co.kr/member/input_member.html" target="_blank"></a> -->
                             </div>
                             <article>
                                 <h2>naver 회원가입</h2>
                                 <p>
                                  네이버 회원가입 페이지를 클론 코딩 하였습니다. php파일로 연결하여 서버 전송이 가능합니다.
                                 </p>
-                                <button>view more</button>
+                                <a class="moreBtn" href="http://oiokoo.dothome.co.kr/member/input_member.html" target="_blank">view more</a>
                             </article>
                         </div>                   
                     </div>
@@ -340,7 +339,7 @@
                                    180deg 회전하는 카드,3D cube 박스, 3D 슬라이드 입니다. 
                                    라디오 버튼을 클릭시 주제에 따라 3d 박스가 회전을 합니다. 
                                 </p>
-                                <button>view more</button>
+                                <a class="moreBtn" href="http://oiokoo.dothome.co.kr/cube/" target="_blank">view more</a>
                             </article>
                         </div>
                     </div>                   
@@ -352,7 +351,7 @@
                                 <p>
                                     삼각함수를 활용하여 라디언,sin,cos 값을 구하여 회전 슬라이드 갤러리를 구현했습니다.
                                 </p>
-                                <button>view more</button>
+                                <a class="moreBtn" href="http://oiokoo.dothome.co.kr/radian/" target="_blank">view more</a>
                             </article>
                         </div>
                     </div>                  
@@ -362,9 +361,9 @@
                             <article>
                                 <h2>Mini game</h2>
                                 <p>
-                                    자바스크립트로 제작된 미니 게임입니다.
+                                    JavaScript로 제작된 미니 게임입니다. 정해진 시간내에 🥕을 클릭하며 점수를 얻는 게임입니다.
                                 </p>
-                                <button>view more</button>
+                                <a class="moreBtn" href="https://github.com/Ginny-choi/mini-game" target="_blank">view more</a>
                             </article>
                         </div>
                     </div>                  
@@ -382,7 +381,7 @@
                          <div><b>Tel : </b>010 7584 3868</div>
                          <div><b>Email : </b><a href="mailto:choieeejeong@gmail.com">choieeejeong@gmail.com<i class="email-icon far fa-envelope"></i></a></div>
                          <div>
-                            <a class="contact-icon" href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="contact-icon" href="https://github.com/Ginny-choi" target="_blank"><i class="fab fa-github"></i></a>
                             <a class="contact-icon" href="mailto:choieeejeong@gmail.com"><i class="far fa-envelope-open"></i></a>  
                          </div>
                      </div>
