@@ -23,7 +23,7 @@
      skillFn:function(){
          const circle = $('.circle');
          const number = $('.number');
-         const skils = document.querySelector('#skils');
+         const skils = document.querySelector('#skills');
          const skilsTop = $(skils).offset().top;
          const $window = $(window);
 
