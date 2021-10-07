@@ -24,7 +24,7 @@
          const circle = $('.circle');
          const number = $('.number');
          const skils = document.querySelector('#skills');
-         const skilsTop = $(skils).offset().top;
+         const skillsTop = $(skills).offset().top;
          const $window = $(window);
 
          let totalLen = [];
@@ -35,7 +35,7 @@
          let cnt = [0,0,0,0,0];
 
          $window.scroll( () => {
-             if($window.scrollTop() >= skilsTop - 200){
+             if($window.scrollTop() >= skillsTop - 200){
                                      
              }
              else {
@@ -74,24 +74,22 @@
         
      },
      mobileFn:function(){
-         const mobileBtn = document.querySelector('.mobile-btn');
-         const closeBtn = document.querySelector('.close-btn');
-         const mobileMenu = document.querySelector('.mobile-menu');
+         const $mobileBtn = $('.mobile-btn');
+         const $closeBtn = $('.close-btn');
+         const $mobileMenu = $('.mobile-menu');
+      
+        $mobileBtn.on({
+            click:function () {
+                $mobileMenu.removeClass('mobile-menu-hide');        
+            }            
+        })
+        $closeBtn.on({
+            click:function(){
+                $mobileMenu.addClass('mobile-menu-hide');
+            }
+        })        
 
-         mobileBtn.addEventListener('click', () => {
-             mobileMenuShow();
-         })
-
-         closeBtn.addEventListener('click', () => {
-            hideMobileMenu();
-         })
-
-         function mobileMenuShow(){
-            mobileMenu.classList.remove('mobile-menu-hide');
-         }
-         function hideMobileMenu(){
-            mobileMenu.classList.add('mobile-menu-hide');
-         }
+       
      },
      moveFont:function(){
         const moveFont = document.querySelector('.move-font');
