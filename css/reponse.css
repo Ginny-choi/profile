@@ -57,6 +57,9 @@
   #skils {
     padding-bottom: 15.3061224489796vw;
   }
+  .skill-box {
+    width: 48%;
+  }
   .mini-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -152,6 +155,9 @@
   /*skils*/
   .skils-list {
     flex-direction: column;
+  }
+  .skill-box {
+    width: 100%;
   }
   .list-wrap {
     width: 200px;

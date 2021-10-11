@@ -1,9 +1,9 @@
 (function($){
  var script = {
      init:function(){
-        this.gotoFn();
-        this.skillFn();
+        this.gotoFn();        
         this.mobileFn();
+        this.skillsFn();
         this.moveFont();
         this.headerColor();
      },
@@ -20,59 +20,7 @@
         });
        });    
      },
-     skillFn:function(){
-         const circle = $('.circle');
-         const number = $('.number');
-         const skils = document.querySelector('#skills');
-         const skillsTop = $(skills).offset().top;
-         const $window = $(window);
 
-         let totalLen = [];
-         let percent = [0.9,0.8,0.8,0.55,0.45];
-         let percentLen = [];         
-         let piece = [];
-         let setId = null;
-         let cnt = [0,0,0,0,0];
-
-         $window.scroll( () => {
-             if($window.scrollTop() >= skillsTop - 200){
-                                     
-             }
-             else {
-                 
-             }
-         })
-
-         
-            $.each(circle, function(idx, obj){
-                totalLen[idx] = Math.ceil(obj.getTotalLength());
-    
-                obj.style.strokeDasharray = totalLen[idx];
-                obj.style.strokeDashoffset = totalLen[idx];
-    
-                //퍼센트 길이 값 구하기//
-                percentLen[idx] = Math.ceil(totalLen[idx] * percent[idx]);
-                //1/4 길이(한마디) 구해서 0.06초로 나누기
-                piece[idx] = (percentLen[idx]/4)/70;     
-               
-                setId = setInterval(countFn, 10);
-    
-                function countFn(){
-                    cnt[idx] +=piece[idx];
-                    if(cnt[idx] > percentLen[idx]){
-                        clearInterval(setId);
-                    }
-                    else {
-                        obj.style.strokeDashoffset = totalLen[idx]-cnt[idx];
-                        number.eq(idx).html(Math.round(cnt[idx]/totalLen[idx]*100)+'%');
-                    }
-    
-                
-                }
-             })       
-        
-        
-     },
      mobileFn:function(){
          const $mobileBtn = $('.mobile-btn');
          const $closeBtn = $('.close-btn');
@@ -91,16 +39,48 @@
 
        
      },
+     skillsFn:function(){
+         let $skillsTop = $("#skills").offset().top;
+         let t = 0;
+         const $skillPer = $('.skill-per');
+         const $window = $(window);
+
+        $(window).scroll(function(){
+            if($window.scrollTop() >= $skillsTop){   
+                if(t==0){
+                    t=1;
+                    $skillPer.addClass('ani');   
+                    $skillPer.css("width","100%");          
+                }          
+            }
+            else if($window.scrollTop() == 0){
+                t=0;
+                $skillPer.css("width","0");
+                $skillPer.removeClass('ani');              
+            }
+        })
+     },
      moveFont:function(){
         const moveFont = document.querySelector('.move-font');
         const intro = document.querySelector('#intro');
+
+       if(window.innerWidth >=1200){
         intro.addEventListener('mousemove', (event) => {
-             const x = event.clientX*0.04;
-             const y = event.clientY*0.04;
+            const x = event.clientX*0.04;
+            const y = event.clientY*0.04;
 
-             moveFont.style.transform = `translate(${x}px,${y}px)`;            
+            moveFont.style.transform = `translate(${x}px,${y}px)`;            
 
-         })
+        })
+       }
+       else {
+         moveFont.style.transform = `translate(${0}px,${0}px)`;   
+         console.log('he');
+       }
+        
+        //  intro.addEventListener('mouseleave', function(){
+        //      moveFont.style.transform = `translate(0px,0px)`; 
+        //  })
          
      },
      headerColor:function(){
