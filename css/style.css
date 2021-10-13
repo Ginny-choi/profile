@@ -50,7 +50,7 @@ a {
   align-items: center;
 }
 #header.header-color {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
 }
 
 .logo {
@@ -285,7 +285,9 @@ a {
   width: 80%;
   margin: 50px auto;
 }
-
+.description {
+  color: #333;
+}
 .my-text p {
   font-size: var(--basic-size);
 }
@@ -328,7 +330,7 @@ a {
 }
 
 .icon h5 {
-  font-size: 25px;
+  font-size: 21px;
   padding-top: 20px;
 }
 .my-info {
@@ -669,12 +671,14 @@ article p {
 /* footer ////*/
 #footer {
   width: 100%;
-  height: 90px;
+  height: 70px;
   background-color: #555;
-  text-align: center;
 }
 #footer span {
+  display: block;
+  text-align: center;
+  width: 100%;
   font-size: 17px;
   color: #ddd;
-  line-height: 90px;
+  line-height: 70px;
 }

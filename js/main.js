@@ -13,8 +13,9 @@
          
        $.each($goBtn, function(idx){
         $goBtn.on({
-            click:function(){   
-                var url = $(this).attr('href');              
+            click:function(e){   
+                var url = $(this).attr('href');  
+                e.preventDefault();            
             $('html,body').stop().animate({scrollTop:$(url).offset().top},500);                  
             }
         });
