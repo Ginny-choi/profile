@@ -25,6 +25,7 @@
          const $mobileBtn = $('.mobile-btn');
          const $closeBtn = $('.close-btn');
          const $mobileMenu = $('.mobile-menu');
+         const $window = $(window);
       
         $mobileBtn.on({
             click:function () {
@@ -36,6 +37,11 @@
                 $mobileMenu.addClass('mobile-menu-hide');
             }
         })        
+        $window.resize(function(){
+            if($window.innerWidth() >= 980){
+               $mobileMenu.addClass('mobile-menu-hide');
+            }
+        })
 
        
      },
@@ -46,9 +52,11 @@
          const $window = $(window);
 
         $(window).scroll(function(){
-            if($window.scrollTop() >= $skillsTop-200){   
+            if($window.scrollTop() >= $skillsTop){   
                 if(t==0){
                     t=1;
+                    console.log($skillsTop);
+                    console.log('w',$window.scrollTop());
                     $skillPer.addClass('ani');   
                     $skillPer.css("width","100%");          
                 }          

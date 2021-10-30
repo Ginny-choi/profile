@@ -117,7 +117,7 @@ a {
   right: 0;
   transform: translateX(0);
   z-index: 4;
-  width: 30%;
+  width: 40%;
   height: 100%;
   background-color: rgba(220, 220, 220, 0.9);
   transition: all 300ms ease-in;
@@ -312,7 +312,9 @@ a {
   @media all and (max-width: 1024px) {
     padding: 14.6484375% 0;
   }
-
+  @media all and (max-width: 980px) {
+    padding-top: 70px;
+  }
   .icon-box {
     display: flex;
     align-items: center;
@@ -427,10 +429,10 @@ a {
   padding: 100px 0 200px;
 
   @media all and (max-width: 1024px) {
-    padding: 0 0 200px;
+    padding: 80px 0 200px;
   }
   @media all and (max-width: var.$breakWeb2) {
-    padding-bottom: 15.3061224489796vw;
+    padding: 70px 0 15.3061224489796vw;
   }
   .skill-box-wrap {
     width: 80%;
@@ -512,8 +514,7 @@ a {
   background-color: var.$bgLigth;
 
   @media all and (max-width: var.$breakWeb2) {
-    padding: 150px 0 100px;
-    background-color: var.$bgLigth;
+    padding: 15.3061224489796vw 0 50px;
   }
 
   .work-title {
@@ -669,6 +670,10 @@ a {
   width: 100%;
   padding: 100px 0;
   background-color: var.$bgLigth;
+
+  @media all and (max-width: var.$breakWeb2) {
+    padding: 50px 0;
+  }
 
   .mini-list {
     padding-top: 100px;
@@ -843,14 +848,13 @@ a {
 //footer
 #footer {
   width: 100%;
-  height: 70px;
   background-color: var.$colorGrey;
-  span {
+  p {
     display: block;
     text-align: center;
     width: 100%;
     font-size: 17px;
     color: #bdbdbd;
-    line-height: 70px;
+    padding: 25px 0;
   }
 }
